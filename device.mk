@@ -23,7 +23,8 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+    $(DEVICE_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
