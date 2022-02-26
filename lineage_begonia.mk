@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/begonia/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -23,9 +23,15 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+#Sakura Flag
+SAKURA_OFFICIAL := true
+SAKURA_MAINTAINER := abhixv
+SAKURA_BUILD_TYPE := basicgapps
+TARGET_BOOT_ANIMATION_RES := 1080
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := potato_begonia
+PRODUCT_NAME := lineage_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
